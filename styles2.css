@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*apply all said features to ALL ELEMENTS*/
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+}
+/*applies viewport height + width and brings gradient to background, also creates some space for right and left side for ads (possibly)*/
+.navbar {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+/*preprares navigation bar for use*/
+.menu-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+    transition-duration: .5s;
+}
+/*moves menu to the right, and moves nav items to left*/
+.menu-icon:hover {
+    transform: translateY(-10px);
+}
+/*makes icon go up*/
+nav {
+    flex: 1;
+    text-align: right;
+}
+/*aligns text*/
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    transition-duration: .5s;
+}
+/*moves list for each piece of text*/
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+/*removes all text decorations and adjusts font size*/
+li:hover{
+    transform: translateY(-10px);
+}
+/*makes text go up*/
+.row {
+    display: flex;
+    height: 65%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50%;
+}
+/*changes columns and rows*/
+.maintext {
+    padding-right: 300px;
+}
+h1 {
+    color: white;
+    font-size: 100px;
+}
+/*header*/
+p {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*text-below header*/
+button {
+    width: 180px;
+    color: black;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+/*preprares button*/
+button:hover {
+    color: white;
+    background-color: black;
+}
+/*when you hover over button, button changes color*/
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition-duration:.8s;
+}
+/*preprares cards*/
+.card:hover{
+    transform: translateY(-20px);
+}
+/*moves cards down 10px when hovering*/
+h5 {
+    color: white;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    font-size: 20px;
+}
+/*preprares text to be easier to see*/
+.card p {
+    color: white;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    font-size: 12px;
+}
+/*changes text within cards*/
+.card1 {
+    background-image: url(java-logo.png);
+}
+.card2 {
+    background-image: url(html-logo.avif);
+}
+.card3 {
+    background-image: url(css-logo.svg);
+}
+.card4 {
+    background-image: url(C++-logo.png);
+}
+.card5 {
+    background-image: url(C-logo.png);
+}
+.card6 {
+    background-image: url(Javascript-logo.png);
+}
+/*changes background image of each card*/
